@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>jack's blog</title>
+    <title>Pelican + Gitgub學習日誌[一]</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="jack">
@@ -64,7 +64,7 @@
           <div class="nav-collapse">
             <ul class="nav">
                           <li class="divider-vertical"></li>
-                  <li >
+                  <li class="active">
                     <a href="/category/programming.html">
 						<i class="icon-folder-open icon-large"></i>programming
 					</a>
@@ -84,9 +84,20 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="/pelican-blog.html">Pelican + Gitgub學習日誌[一]</a></h1>
-                <div class="well small"><footer class="post-info">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Pelican + Gitgub學習日誌[一]">
+                                        Pelican + Gitgub學習日誌[一]
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
 <span class="label">Date</span>
 <abbr class="published" title="2015-01-22T00:30:00+08:00">
         <i class="icon-calendar"></i>週四 22 一月 2015
@@ -101,20 +112,22 @@
 	<a href="/tag/pelican.html"><i class="icon-tag"></i>pelican</a>
 	<a href="/tag/python.html"><i class="icon-tag"></i>python</a>
 	<a href="/tag/github.html"><i class="icon-tag"></i>github</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><h2>前言</h2>
+</footer><!-- /.post-info -->                </div>
+                <h2>前言</h2>
 <p>一直以來都有寫網誌的習慣，想記錄一些生活，而最初是從無名小站開始，記得那時是2006年，直到無名宣布關閉之前也累積了近百篇的文章，之後才開始轉往痞客邦及Blogger，而FaceBook因為推播的特性，使得文章難以整理及保存，所以一直想找一個穩定的blog系統，但最後又發現這些付費網站的服務有很多限制與風險。</p>
 <p>後來開始以<a href="http://lamphowto.com/">LAMP</a>架構並用自己的主機來架設<a href="http://en.wikipedia.org/wiki/WordPress">WordPress</a> + MySQL，而WordPress是以PHP為基礎而開發的Dynamic Site Generators或稱CMS；而他的優點是使用者只需要管理內容的部分，不需要額外思考資料格式的問題，不論是管理文章、圖片或是佈景更換都非常方便，並且加上採用許多的Mashup技術及plug-in tools，很容易就搭建一個風格多變且畫面美觀的網站，但隨著內容日趨增加會使得網站的載入非常的慢，也歸因於網路頻寬以及頻繁的資料庫存取。</p>
 <p>在這之前也利用一些免費的網路空間來建置WordPress但必須考慮同時支援MySQL以及虛擬主機業者的網路頻寬問題，而曾經用來架設動態網站的免費空間感覺速度都相當慢，也被無預警關閉過。
 相較之下，靜態網頁的存取效率及安全性方面就比起動態網頁來得更好，另外也因為以前寫網站的經驗，可以習慣markdown的寫作方式。</p>
 <p>而最近因為一些工作需要而開始接觸<a href="https://www.python.org/">Python</a>，也在學習與尋找的過程之中也認識了一個以Python架構來開發的良好的Static Site Generators，即<a href="http://docs.getpelican.com/en/3.5.0/">Pelican</a>，而這個網站就是以Pelican來架設。</p>
 <h3>環境</h3>
-<p>本網誌架設環境是在Windows8 pro 64 bit，但另一方面實測在Ubuntu 12 ...</p>
-                        <a class="btn primary xsmall" href="/pelican-blog.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-
+<p>本網誌架設環境是在Windows8 pro 64 bit，但另一方面實測在Ubuntu 12.04 LTS上的運作效率較好，Pelican在Linux的支援性上也較Windows來的更高，過去常使用Linux來進行網管或架設File Server、DNS，所以規劃會在Linux上面設置pelican再將它git上Github pages以及搭配Dropbox來備份作為雙層保護，而用Git來做版本控制也比較方便且安全。</p>
+<blockquote>
+<p><a href="http://docs.getpelican.com/en/3.5.0/">Pelican 3.5.0</a></p>
+<p><a href="https://www.python.org/downloads/release/python-342/">Python 3.4.2</a></p>
+</blockquote>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
